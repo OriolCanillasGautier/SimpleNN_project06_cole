@@ -357,7 +357,7 @@ def predict_annual():
             monthly_predictions.append({
                 'month': month,
                 'sales': round(month_sales_total, 2),
-                'profit': round(month_sales_total * 0.167, 2)  # Benefici 16.7%
+                'profit': round(month_sales_total * 0.67, 2)  # Benefici 16.7%
             })
         
         return jsonify({

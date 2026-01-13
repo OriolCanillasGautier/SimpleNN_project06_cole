@@ -337,26 +337,13 @@
 <body>
     <div class="container">
         <header>
-            <h1>📊 Predicció de <span>Vendes Anual</span></h1>
+            <h1>Predicció de <span>Vendes Anual</span></h1>
             <p>Prediccions mensuals basades en xarxes neuronals</p>
-            <div class="feature-list">
-                <div class="feature-item">
-                    <span class="check-icon">✓</span>
-                    12 mesos de predicció
-                </div>
-                <div class="feature-item">
-                    <span class="check-icon">✓</span>
-                    Benefici 16.7%
-                </div>
-                <div class="feature-item">
-                    <span class="check-icon">✓</span>
-                    Patrons estacionals
-                </div>
             </div>
         </header>
         
         <div class="card">
-            <h2 style="margin-bottom: 20px;">📅 Selecciona Any i Dataset</h2>
+            <h2 style="margin-bottom: 20px;">Selecciona Any i Dataset</h2>
             
             <div class="dataset-selector">
                 <button class="dataset-btn active" data-dataset="sales_data2">Sales Data 2</button>
@@ -383,7 +370,7 @@
             
             <div class="btn-container">
                 <button class="btn" id="predict-btn">
-                    📈 Generar Prediccions Anuals
+                    Generar Prediccions Anuals
                 </button>
             </div>
             
@@ -394,10 +381,10 @@
         </div>
         
         <div class="card" id="results">
-            <h2 class="year-title" id="year-title">📅 Prediccions 2026</h2>
+            <h2 class="year-title" id="year-title">Prediccions 2026</h2>
             
             <div class="info-box">
-                <p>💡 Les prediccions es basen en patrons estacionals reals del dataset. El benefici és sempre del <strong>16.7%</strong> sobre les vendes.</p>
+                <p>Les prediccions es basen en patrons estacionals reals del dataset. El benefici és sempre del <strong>6.7%</strong> sobre les vendes.</p>
             </div>
             
             <div class="summary">
@@ -407,7 +394,7 @@
                 </div>
                 <div class="summary-item">
                     <span class="value" id="total-profit">€0</span>
-                    <span class="label">Benefici Total (16.7%)</span>
+                    <span class="label">Benefici Total (6.7%)</span>
                 </div>
                 <div class="summary-item">
                     <span class="value" id="avg-monthly">€0</span>
@@ -415,13 +402,13 @@
                 </div>
             </div>
             
-            <h3 style="margin-bottom: 15px;">📋 Detall per Mes</h3>
+            <h3 style="margin-bottom: 15px;">Detall per Mes</h3>
             <table>
                 <thead>
                     <tr>
                         <th>Mes</th>
                         <th>Vendes Predites</th>
-                        <th>Benefici (16.7%)</th>
+                        <th>Benefici (6.7%)</th>
                         <th>Variació vs Mitjana</th>
                     </tr>
                 </thead>
@@ -520,7 +507,7 @@
         });
         
         function displayResults(data, year) {
-            document.getElementById('year-title').textContent = `📅 Prediccions ${year}`;
+            document.getElementById('year-title').textContent = `Prediccions ${year}`;
             
             // Sumari
             const totalSales = data.monthly_predictions.reduce((sum, m) => sum + m.sales, 0);
